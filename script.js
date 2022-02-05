@@ -43,7 +43,7 @@ const userSelector = () => {
 
 
 const priceCalc = (gameSelected) => {
-    if (gameSelected === `Grand Theft Auto 5`) 
+   /*  if (gameSelected === `Grand Theft Auto 5`) 
             return 5000
         else if (gameSelected === `FIFA 22`)
             return 9000
@@ -52,7 +52,24 @@ const priceCalc = (gameSelected) => {
         else if (gameSelected === `Forza Horizon 5`)
             return 10000
         else
+            return 11000 */
+    switch (gameSelected){
+        case `Grand Theft Auto 5`:
+            return 5000
+            break
+        case `FIFA 22`:
+            return 9000
+            break
+        case `Call of Duty MW`:
+            return 3000
+            break
+        case `Forza Horizon 5`:
+            return 10000
+            break
+        default:
             return 11000
+
+    }
 }
 
 
