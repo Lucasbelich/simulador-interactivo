@@ -8,7 +8,9 @@ let cartView = ``
 let cost = 0
 
 const welcome = () => {
-    alert(`Bienvenidos`)
+    let name = prompt(`Ingrese su nombre`)
+    alert(`Bienvenido/a ${name}`)
+    
 }
 
 const userSelector = () => {
@@ -56,16 +58,15 @@ const priceCalc = (gameSelected) => {
     switch (gameSelected){
         case `Grand Theft Auto 5`:
             return 5000
-            break
+            
         case `FIFA 22`:
             return 9000
-            break
+            
         case `Call of Duty MW`:
             return 3000
-            break
+            
         case `Forza Horizon 5`:
             return 10000
-            break
         default:
             return 11000
 
@@ -85,7 +86,7 @@ const payout = () => {
         alert(`Ingresó un caracter no valido`)
         payout()
     } else if (pay > cost) {
-        alert(`Su vuelto es $${pay - cost}\n Gracias por su compra!`)
+        alert(`Su vuelto es $${pay - cost}\nGracias por su compra!`)
     } else if (pay === cost) {
         alert(`Gracias por su compra!`)
     } else {
