@@ -46,7 +46,7 @@ const userGameSelector = () => {
   });
   
   do {
-      gameNum = parseInt(promp(prompText))
+      gameNum = parseInt(prompt(prompText))
     /* gameNum = parseInt(
       prompt(
         `Ingrese el número correspondiente al juego a comprar\n 1) Grand Theft Auto 5\n 2) FIFA 22\n 3) Call of Duty MW\n 4) Forza Horizon 5\n 5) Battlefield 2042`
